@@ -1,0 +1,496 @@
+@font-face {
+  font-family: "Inter-Regular";
+  font-display: block;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  font-display: block;
+  src: url("../fonts/Inter-Bold.ttf");
+}
+* {
+  font-family: "Inter-Regular";
+  font-display: block;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-wrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+  flex: 1 0 auto;
+  padding: 0px 20px;
+}
+
+/**Шапка
+---------------------------------------------**/
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: black;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header div.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header div.menu div.burger-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+header div.menu div.burger-menu button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+header div.menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: white;
+}
+
+header div.menu ul li {
+  padding-right: 40px;
+}
+
+header div.menu ul li:last-child {
+  padding-right: 0px;
+}
+
+header div.menu ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.description {
+  width: 180px;
+  color: white;
+  margin-top: -15px;
+  z-index: 1;
+}
+
+.slogan p {
+  margin-top: 15px;
+  font-family: "Inter-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 73px;
+  color: white;
+  text-align: center;
+}
+.slogan span {
+  font-family: "Inter-Bold";
+  color: #ff7d04;
+}
+
+/**Основная часть
+---------------------------------------------**/
+
+main {
+  margin-bottom: 20px;
+}
+
+main div.pluses {
+  display: flex;
+  flex-direction: column;
+}
+
+main h2 {
+  font-family: "Inter-Bold";
+  font-size: 48px;
+  margin: 16px 0px;
+}
+
+main a {
+  font-family: "Inter-Bold";
+  font-size: 32px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #8d8a8a;
+}
+
+/**Достоинства**/
+
+main div.pluses div.rows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main div.pluses div.rows div {
+  border-radius: 10px;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0px 5px 5px 0px;
+  padding: 5px 5px 5px 10px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: right 10px bottom;
+  background-size: contain;
+}
+
+main div.pluses div.rows div h3 {
+  font-family: "Inter-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+main div.pluses div.rows div p {
+  font-family: "Inter-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+main div.pluses div.rows div.plus1 {
+  background-color: #761212;
+  background-image: url(../images/pluses/dostoinstvo1.svg);
+}
+
+main div.pluses div.rows div.plus2 {
+  background-color: #1b1a42;
+  background-image: url(../images/pluses/dostoinstvo2.svg);
+}
+
+main div.pluses div.rows div.plus3 {
+  background-color: #0c7517;
+  background-image: url(../images/pluses/dostoinstvo3.svg);
+}
+
+main div.pluses div.rows div.plus4 {
+  background-color: #c3b322;
+  background-image: url(../images/pluses/dostoinstvo4.svg);
+}
+
+/**Популярные услуги**/
+
+main div.popular {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  gap: 5px;
+}
+
+main div.popular div.service {
+  display: flex;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 33%;
+  justify-content: space-between;
+}
+
+main div.popular div.service img{
+  width: 60%;
+  align-self: center;
+}
+
+main div.popular div.service a{
+  font-size: 24px;
+}
+
+/**Все услуги**/
+
+main div.services {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+main div.services div.service {
+  display: flex;
+  flex-direction: row;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+main div.services div.service .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main div.services div.service .column a{
+  font-size: 24px;
+}
+
+main div.services div.service button{
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #ff7d04;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main div.services div.service button:hover{
+  background-color: #d86800;
+  cursor: pointer;
+}
+
+/**Форма**/
+
+.main__contact {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #d9d9d9;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.main__contact form{
+  width: 50%;
+}
+
+main form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main form input,
+select {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+main form input {
+  padding: 10px;
+}
+
+main form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+}
+main form button {
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #ff7d04;
+  border-radius: 10px;
+  width: 100%;
+  align-self: center;
+}
+main form button:hover {
+  background-color: #d86800;
+  cursor: pointer;
+}
+
+.main__order {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #d9d9d9;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+main form div.choise {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main form div.choise .column{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+main form div.choise .column #canChange{
+  align-self: flex-start;
+}
+
+main form div.choise .column #changed{
+  align-self: flex-end;
+}
+
+main form div.choise .column h3:last-child{
+  align-self:flex-end;
+}
+
+main form div.choise .column select {
+  width: 100%;
+  font-size: 24px;
+  background-color: rgb(243, 242, 242);
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+main form div.choise select option{
+  cursor: pointer;
+}
+
+select option:hover,
+select option:focus,
+  select option:active {
+    background: rgb(243, 242, 242);
+    background-color: rgb(243, 242, 242)!important;
+  }
+
+  select option:checked {
+    background: linear-gradient(rgb(243, 242, 242), rgb(243, 242, 242));
+    background-color: rgb(243, 242, 242) !important; 
+  }
+
+  select{
+    box-shadow: none!important;
+  }
+
+#select1 option:first-child{
+  cursor: default;
+  display: none;
+}
+
+#select2 option:first-child{
+  cursor: default;
+  display: block;
+}
+
+#select2 option{
+  display: none;
+}
+
+.choise select {
+  overflow-y: auto;
+}
+
+/**О нас**/
+
+main div.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  padding: 16px;
+}
+
+main div.block img{
+  border-radius: 5px;
+}
+
+/**Примеры**/
+
+main div.examples {
+  display: flex;
+  flex-direction: column;
+}
+
+main div.examples div.row {
+  display: flex;
+  flex-direction: row;
+}
+
+main div.examples div.row div {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+  background-color: #d9d9d9;
+  border: 2px solid white;
+}
+
+main div.examples div.row div img {
+  width: 100%;
+  height: 100%;
+}
+
+main div.examples div.row div p {
+  align-self: center;
+  margin: 8px 0px;
+  font-size: 16px;
+}
+
+/**Нам доверяют**/
+
+main div.partners {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+main div.partners div.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main div.partners div.row img {
+  width: 25%;
+}
+
+main div.block img {
+  width: 100%;
+}
+
+/**Подвал
+---------------------------------------------**/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer a{
+  color: white;
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 2%;
+  text-align: center;
+}
