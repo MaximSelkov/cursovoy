@@ -1,0 +1,117 @@
+@media (min-width: 768px) and (max-width: 979px) {
+    .main__contact form {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    main h2{
+      font-size: 34px;
+    }
+  
+    main a{
+      font-size: 24px;
+    }
+  
+    .main__contact form {
+      width: 90%;
+    }
+  
+    .menu-wrapper{
+      margin: 0;
+    }
+    
+    header div.menu div.burger-menu {
+      display: block;
+    }
+  
+    header div.menu {
+      flex-direction: column;
+    }
+  
+    header div.menu ul {
+      display: none;
+      flex-direction: column;
+    }
+  
+    header .slogan {
+      display: none;
+    }
+  
+    footer{
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    footer .contact{
+      padding: 10px;
+    }
+  
+    main div.pluses div.rows {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    main div.popular {
+      flex-direction: column;
+    }
+    
+    main div.popular div.service {
+      background-color: #d9d9d9;
+      flex-direction: column;
+      width: 100%;
+      padding: 0px;
+    }
+  
+    main div.services div.service {
+      flex-direction: column;
+    }
+  
+    main div.services div.service div.column a{
+      font-size: 12px;
+    }
+  
+    main div.services div.service img {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    main div.examples div.row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    
+    main div.examples div.row div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    main form div.choise {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    
+    main form div.choise .column{
+      width: 100%;
+    }
+    main form div.choise .column #canChange{
+      align-self: center;
+    }
+    
+    main form div.choise .column #changed{
+      align-self: center;
+    }  
+  }
+  
+  @media (max-width: 400px) {
+    main form select option{
+      font-size: 18px;
+    }
+  }
+  

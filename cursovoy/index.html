@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="image/x-icon" href="./images/icon.png" rel="shortcut icon">
+  <link type="Image/x-icon" href="./images/icon.png" rel="icon">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/media.css" />
+  <title>Доступное Решение - рекламное агенство</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu" id="menu">
+      <div class="logo">
+        <a href=""><img src="images/logo2.svg" /></a>
+        <div class="description">
+          <p>- Рекламная компания</p>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <button id="burger">☰</button>
+      </div>
+      <ul id="menu-points">
+        <li class="page-link"><a href="">Главная</a></li>
+        <li class="page-link"><a href="./pages/about_us.html">О нас</a></li>
+        <li class="page-link"><a href="./pages/services.html">Услуги</a></li>
+        <li class="page-link"><a href="#contacts">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="slogan">
+      <p>
+        Мы - доступное решение.<br />
+        Сделаем <span>рабочий</span> рекламный продукт.
+      </p>
+    </div>
+    </div>
+  </header>
+  <div class="main-wrapper">
+    <main>
+      <h2>Достоинства</h2>
+      <div class="pluses">
+        <div class="rows">
+          <div class="plus1">
+            <h3>Оперативный контакт</h3>
+            <p>При возникновении вопросов отвечаем в течение 5 минут</p>
+          </div>
+          <div class="plus2">
+            <h3>Качественно</h3>
+            <p>Наша команда профессионалов сделает всё в лучшем виде</p>
+          </div>
+          <div class="plus3">
+            <h3>Точно в цель</h3>
+            <p>
+              Выбор аудитории по территориальному признаку, уровню достатка
+            </p>
+          </div>
+          <div class="plus4">
+            <h3>Скидки</h3>
+            <p>Предоставляем скидки на услуги для постоянных клиентов</p>
+          </div>
+        </div>
+      </div>
+      <h2>Популярные услуги</h2>
+      <div class="popular">
+        <div class="service">
+          <img src="./images/services/video.svg" alt="" />
+          <h3>Рекламный ролик</h3>
+          <p>
+            Выберем подходящую для конкретной площадки концепцию,
+            креативно презентуем продукт, сделаем видеорекламу под ключ:
+            от сценария до промоушна.
+          </p>
+          <a href="./pages/services.html">Подробнее...</a>
+        </div>
+        <div class="service">
+          <img src="./images/services/social.svg" alt="" />
+          <h3>Реклама в соцсетях</h3>
+          <p>
+            Получаем заявки из любых соцсетей для любого бизнеса – даже в
+            самых сложных тематиках. В одной фразе можем рассказать о
+            вашей компании.
+          </p>
+          <a href="./pages/services.html">Подробнее...</a>
+        </div>
+        <div class="service">
+          <img src="./images/services/billboard.svg" alt="" />
+          <h3>Реклама на билборде</h3>
+          <p>
+            Реклама на билборде – это один из самых популярных видов
+            наружной рекламы. Рекламный щит позволяет беспрерывно
+            демонстрировать Ваше рекламное объявление.
+          </p>
+          <a href="./pages/services.html">Подробнее...</a>
+        </div>
+      </div>
+      <a href="./pages/services.html" id="all-services">Все услуги</a>
+      <h2>Связаться с нами</h2>
+      <div class="main__contact">
+        <h2>
+          Остались вопросы?<br />
+          Заполните форму и наш<br />
+          специалист свяжется с вами!
+        </h2>
+        <form action="#" onsubmit="return false">
+          <label for="FIO">ФИО:</label>
+          <input type="text" placeholder="Иванов Иван Иванович" required id="FIO" />
+          <label for="tel">Ваш телефон:</label>
+          <input type="tel" placeholder="+7(999)999-99-99" required class="tel" />
+          <label for="mail">Ваша почта:</label>
+          <input type="email" placeholder="Ivanov@mail.ru" required id="mail" />
+          <label for="message">Сообщение:</label>
+          <textarea cols="30" rows="10" placeholder='Например:"Для пиццерии нужна реклама в соцсетях"' required
+            id="message"></textarea>
+          <button>Отправить</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <footer id="contacts">
+    <div class="contact">
+      <h3>Позвонить нам:</h3>
+      <p>+7(900)382-14-72</p>
+      <p>+7 (912)385-13-71</p>
+    </div>
+    <div class="contact">
+      <h3>Наши соцсети:</h3>
+      <p><a href="https://vk.com/">VK</a></p>
+      <p><a href="https://telegram.org/">Telegram</a></p>
+    </div>
+    <div class="contact">
+      <h3>Страницы:</h3>
+      <p><a href="">Главная</a></p>
+      <p><a href="./pages/about_us.html">О нас</a></p>
+      <p><a href="./pages/services.html">Услуги</a></p>
+    </div>
+    <div class="contact">
+      <h3>Контакты:</h3>
+      <p>dost.resh@bk.ru</p>
+      <p>Каменск-Уральский, ул.Мичурина,35</p>
+    </div>
+  </footer>
+  <script src="./js/number-mask.js"></script>
+  <script src="./js/burger.js"></script>
+</body>
+
+</html>
